@@ -1,0 +1,8 @@
+<%= javascript_pack_tag "task" %>
+<h1>Tasks#index</h1>
+<%= render partial: 'form', locals: { newTask: @task } %>
+<ul>
+  <% @tasks.each do |task| %>
+    <li> <%= task.name %>
+  <% end %>
+</ul>
